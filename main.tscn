@@ -1,15 +1,15 @@
-[gd_scene format=3 uid="uid://dy1l6n7lxtc2d"]
+[gd_scene load_steps=7 format=3 uid="uid://dy1l6n7lxtc2d"]
 
 [ext_resource type="Texture2D" uid="uid://c6ucnuff1xe8f" path="res://backgrounds/apocalipse.png" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://br06e6qq4m6od" path="res://historia.gd" id="2_0xm2m"]
 [ext_resource type="FontFile" uid="uid://bg426x7v2kci6" path="res://fontes/animeace2_bld.otf" id="2_h2yge"]
-[ext_resource type="Script" uid="uid://cihr6oua34rfl" path="res://segunda_tela.gd" id="2_lquwl"]
+[ext_resource type="Script" path="res://segunda_tela.gd" id="2_lquwl"]
 [ext_resource type="Script" uid="uid://8n6gtqg30o33" path="res://texto_2.gd" id="3_1bvp3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lquwl"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[node name="tela_secundaria" type="Control" unique_id=938311690]
+[node name="tela_secundaria" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,15 +21,15 @@ offset_bottom = 326.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1262521778]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(101, 33)
 scale = Vector2(0.602604, 0.594444)
 texture = ExtResource("1_ig7tw")
 script = ExtResource("2_lquwl")
 
-[node name="Camera2D" type="Camera2D" parent="Sprite2D" unique_id=1699073341]
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
 
-[node name="Texto2" type="TextEdit" parent="Sprite2D/Camera2D" unique_id=559619539]
+[node name="Texto2" type="TextEdit" parent="Sprite2D/Camera2D"]
 light_mask = 0
 offset_left = -295.385
 offset_top = 228.785
@@ -42,7 +42,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_lquwl")
 wrap_mode = 1
 script = ExtResource("3_1bvp3")
 
-[node name="Texto" type="TextEdit" parent="Sprite2D/Camera2D" unique_id=624705652]
+[node name="Texto" type="TextEdit" parent="Sprite2D/Camera2D"]
 light_mask = 0
 offset_left = -871.0
 offset_top = -484.0

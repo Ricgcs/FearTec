@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bpt8ilvkf4sif"]
+[gd_scene load_steps=8 format=3 uid="uid://bpt8ilvkf4sif"]
 
 [ext_resource type="Texture2D" uid="uid://kb1mbg87icu0" path="res://backgrounds/tela_inicial.png" id="1_62e2m"]
 [ext_resource type="Texture2D" uid="uid://bhdgudfdrkubg" path="res://backgrounds/btns/jogar.png" id="2_iy58a"]
@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://d0k33iqeuv3wy" path="res://backgrounds/btns/devs.png" id="6_sky72"]
 [ext_resource type="Script" uid="uid://vtvtjcxr2qhe" path="res://devs.gd" id="7_iy58a"]
 
-[node name="tela_principal" type="Control" unique_id=1364641979]
+[node name="tela_principal" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,15 +20,15 @@ offset_bottom = -338.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TelaInicial" type="Sprite2D" parent="." unique_id=2065500319]
+[node name="TelaInicial" type="Sprite2D" parent="."]
 position = Vector2(-385, 200.5)
 scale = Vector2(0.598958, 0.604629)
 texture = ExtResource("1_62e2m")
 
-[node name="Camera2D" type="Camera2D" parent="TelaInicial" unique_id=1557103053]
+[node name="Camera2D" type="Camera2D" parent="TelaInicial"]
 position = Vector2(-1.47695, 2.30425)
 
-[node name="jogar" type="TextureButton" parent="TelaInicial/Camera2D" unique_id=1905598927]
+[node name="jogar" type="TextureButton" parent="TelaInicial/Camera2D"]
 offset_left = -816.739
 offset_top = 102.93
 offset_right = -383.739
@@ -39,7 +39,7 @@ ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("3_fj5cn")
 
-[node name="como_jogar" type="TextureButton" parent="TelaInicial/Camera2D" unique_id=161039586]
+[node name="como_jogar" type="TextureButton" parent="TelaInicial/Camera2D"]
 offset_left = -237.785
 offset_top = 113.684
 offset_right = 204.215
@@ -50,7 +50,7 @@ ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("5_iy58a")
 
-[node name="devs" type="TextureButton" parent="TelaInicial/Camera2D" unique_id=738204235]
+[node name="devs" type="TextureButton" parent="TelaInicial/Camera2D"]
 offset_left = 336.738
 offset_top = 133.656
 offset_right = 771.738

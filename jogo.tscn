@@ -1,8 +1,9 @@
-[gd_scene format=3 uid="uid://b2n4ykuaqbebm"]
+[gd_scene load_steps=3 format=3 uid="uid://b2n4ykuaqbebm"]
 
+[ext_resource type="Script" uid="uid://djuva3j0qbl37" path="res://ControleDoJogo.gd" id="1_evvns"]
 [ext_resource type="Texture2D" uid="uid://cycbw0tflf12u" path="res://backgrounds/tela_principal.png" id="1_kxg5b"]
 
-[node name="jogo" type="Control" unique_id=1704200637]
+[node name="jogo" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,11 +14,16 @@ offset_right = -52.0
 offset_bottom = -132.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_evvns")
 
-[node name="fundo" type="Sprite2D" parent="." unique_id=596143980]
-position = Vector2(630.0001, 461)
-scale = Vector2(0.601042, 0.6027778)
+[node name="fundo" type="Sprite2D" parent="."]
+position = Vector2(630, 461)
+scale = Vector2(0.601042, 0.602778)
 texture = ExtResource("1_kxg5b")
 
-[node name="Camera2D" type="Camera2D" parent="fundo" unique_id=1878885724]
-position = Vector2(-3.3275146, 0)
+[node name="Camera2D" type="Camera2D" parent="fundo"]
+position = Vector2(-3.32751, 0)
+
+[node name="Personagem" type="Sprite2D" parent="fundo/Camera2D"]
+position = Vector2(312.79, -230.599)
+scale = Vector2(0.673852, 0.598826)
