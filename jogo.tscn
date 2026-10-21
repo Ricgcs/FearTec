@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2n4ykuaqbebm"]
+[gd_scene load_steps=5 format=3 uid="uid://b2n4ykuaqbebm"]
 
 [ext_resource type="Script" uid="uid://djuva3j0qbl37" path="res://ControleDoJogo.gd" id="1_evvns"]
 [ext_resource type="Texture2D" uid="uid://cycbw0tflf12u" path="res://backgrounds/tela_principal.png" id="1_kxg5b"]
+[ext_resource type="FontFile" uid="uid://bg426x7v2kci6" path="res://fontes/animeace2_bld.otf" id="3_1ap6j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8c340"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="jogo" type="Control"]
 layout_mode = 3
@@ -27,3 +31,15 @@ position = Vector2(-3.32751, 0)
 [node name="Personagem" type="Sprite2D" parent="fundo/Camera2D"]
 position = Vector2(297.816, -233.917)
 scale = Vector2(0.329316, 0.313337)
+
+[node name="fala" type="TextEdit" parent="fundo/Camera2D"]
+light_mask = 0
+offset_left = -725.407
+offset_top = 116.129
+offset_right = 364.593
+offset_bottom = 272.129
+theme_override_colors/background_color = Color(0, 0, 0, 0.00392157)
+theme_override_fonts/font = ExtResource("3_1ap6j")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_8c340")
+wrap_mode = 1

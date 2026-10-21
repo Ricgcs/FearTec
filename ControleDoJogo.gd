@@ -17,4 +17,18 @@ var pessoas = [
 
 func _ready() -> void:
 	var p = pessoas.pick_random()
-	$fundo/Camera2D/Personagem.texture = load(p.caminho) 
+
+	var fala = "Olá meu nome é %s sou do curso %s no semestre %d e minha matéria favorita é %s" % [
+		p.nome,
+		p.curso,
+		p.semestre,
+		p.materia_favorita
+	]
+	print(fala)
+	$fundo/Camera2D/Personagem.texture = load(p.caminho)
+
+	$fundo/Camera2D/fala.text = ""
+
+	for i in fala:
+		$fundo/Camera2D/fala.text += i
+		await get_tree().create_timer(0.1).timeout
