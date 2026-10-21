@@ -9,4 +9,6 @@ func _ready():
 	for i in texto:
 		text += i
 		await get_tree().create_timer(0.1).timeout
+		
+	await get_tree().create_timer(2).timeout
 	get_tree().change_scene_to_file("res://jogo.tscn")

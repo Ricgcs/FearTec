@@ -1,58 +1,61 @@
-[gd_scene load_steps=8 format=3 uid="uid://bpt8ilvkf4sif"]
+[gd_scene format=3 uid="uid://bpt8ilvkf4sif"]
 
-[ext_resource type="Texture2D" uid="uid://kb1mbg87icu0" path="res://backgrounds]/tela_inicial.png" id="1_62e2m"]
-[ext_resource type="Texture2D" uid="uid://bhdgudfdrkubg" path="res://backgrounds]/btns/jogar.png" id="2_iy58a"]
+[ext_resource type="Texture2D" uid="uid://kb1mbg87icu0" path="res://backgrounds/tela_inicial.png" id="1_62e2m"]
+[ext_resource type="Texture2D" uid="uid://bhdgudfdrkubg" path="res://backgrounds/btns/jogar.png" id="2_iy58a"]
 [ext_resource type="Script" uid="uid://dr1kcdtgplafr" path="res://btn_jogo.gd" id="3_fj5cn"]
-[ext_resource type="Texture2D" uid="uid://b5cyjbcl6rbp4" path="res://backgrounds]/btns/como_jogar.png" id="4_6a6wx"]
+[ext_resource type="Texture2D" uid="uid://b5cyjbcl6rbp4" path="res://backgrounds/btns/como_jogar.png" id="4_6a6wx"]
 [ext_resource type="Script" uid="uid://daorolgud6q5g" path="res://btnCJ.gd" id="5_iy58a"]
-[ext_resource type="Texture2D" uid="uid://d0k33iqeuv3wy" path="res://backgrounds]/btns/devs.png" id="6_sky72"]
+[ext_resource type="Texture2D" uid="uid://d0k33iqeuv3wy" path="res://backgrounds/btns/devs.png" id="6_sky72"]
 [ext_resource type="Script" uid="uid://vtvtjcxr2qhe" path="res://devs.gd" id="7_iy58a"]
 
-[node name="tela_principal" type="Control"]
+[node name="tela_principal" type="Control" unique_id=1364641979]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -122.0
-offset_top = -160.0
-offset_right = -122.0
-offset_bottom = -160.0
+offset_left = -157.0
+offset_top = -338.0
+offset_right = -157.0
+offset_bottom = -338.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TelaInicial" type="Sprite2D" parent="."]
+[node name="TelaInicial" type="Sprite2D" parent="." unique_id=2065500319]
 position = Vector2(-385, 200.5)
 scale = Vector2(0.598958, 0.604629)
 texture = ExtResource("1_62e2m")
 
-[node name="Camera2D" type="Camera2D" parent="TelaInicial"]
+[node name="Camera2D" type="Camera2D" parent="TelaInicial" unique_id=1557103053]
 position = Vector2(-1.47695, 2.30425)
 
-[node name="jogar" type="TextureButton" parent="TelaInicial/Camera2D"]
+[node name="jogar" type="TextureButton" parent="TelaInicial/Camera2D" unique_id=1905598927]
 offset_left = -816.739
 offset_top = 102.93
 offset_right = -383.739
 offset_bottom = 350.93
+pivot_offset = Vector2(100, 40)
 texture_normal = ExtResource("2_iy58a")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("3_fj5cn")
 
-[node name="como_jogar" type="TextureButton" parent="TelaInicial/Camera2D"]
+[node name="como_jogar" type="TextureButton" parent="TelaInicial/Camera2D" unique_id=161039586]
 offset_left = -237.785
 offset_top = 113.684
 offset_right = 204.215
 offset_bottom = 341.684
+pivot_offset = Vector2(100, 40)
 texture_normal = ExtResource("4_6a6wx")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("5_iy58a")
 
-[node name="devs" type="TextureButton" parent="TelaInicial/Camera2D"]
+[node name="devs" type="TextureButton" parent="TelaInicial/Camera2D" unique_id=738204235]
 offset_left = 336.738
 offset_top = 133.656
 offset_right = 771.738
 offset_bottom = 331.656
+pivot_offset = Vector2(100, 40)
 texture_normal = ExtResource("6_sky72")
 ignore_texture_size = true
 stretch_mode = 5
