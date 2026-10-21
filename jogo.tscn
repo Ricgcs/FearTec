@@ -25,5 +25,5 @@ texture = ExtResource("1_kxg5b")
 position = Vector2(-3.32751, 0)
 
 [node name="Personagem" type="Sprite2D" parent="fundo/Camera2D"]
-position = Vector2(312.79, -230.599)
-scale = Vector2(0.673852, 0.598826)
+position = Vector2(297.816, -233.917)
+scale = Vector2(0.329316, 0.313337)
