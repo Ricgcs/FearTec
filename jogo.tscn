@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2n4ykuaqbebm"]
+
+[ext_resource type="Texture2D" uid="uid://cycbw0tflf12u" path="res://backgrounds]/tela_principal.png" id="1_kxg5b"]
+
+[node name="jogo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(383, 214.5)
+scale = Vector2(0.601042, 0.591667)
+texture = ExtResource("1_kxg5b")
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
